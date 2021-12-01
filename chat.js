@@ -9,9 +9,9 @@
 // connect to the html page and return 2 ouput intially::  hi <-> hello && how are you <-> i'm good
 
 
-//file creation funtion and if same file available then re-create it (future scope - showing detatis on page)
+//file creation function and if same file available then re-create it with different file name dd-mm-yyyy (future scope - showing detatis on page)
 function file_create(){
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var fso = CreateObject("Scripting.FileSystemObject");
   var a = fso.CreateTextFile("/Users/sayantandas/fun/assist/output", true);
   a.WriteLine("test case");
   a.Close();
