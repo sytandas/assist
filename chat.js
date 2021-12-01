@@ -2,6 +2,35 @@
 //intially we make it simple one question to another reply format 
 //future TODO: machine learning algortihm to predict and implement reply(s)
 
-function(reply){
+// todo:: 
+// write funtions that are doing file creation/checking 
+// write function for lexical analysis and return according to the input
+// write function for ouput showing 
+// connect to the html page and return 2 ouput intially::  hi <-> hello && how are you <-> i'm good
+
+
+//file creation funtion and if same file available then re-create it (future scope - showing detatis on page)
+function file_create(){
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var a = fso.CreateTextFile("/Users/sayantandas/fun/assist/output", true);
+  a.WriteLine("test case");
+  a.Close();
+}
+
+function file_reder(){
+}
+
+function file_writer(){
+}
+
+function reply(){
+  
+}
+
+function check(){
+
+}
+
+function exit(){
 
 }
