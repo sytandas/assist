@@ -10,11 +10,16 @@
 
 
 //file creation function and if same file available then re-create it with different file name dd-mm-yyyy (future scope - showing detatis on page)
+
+import * as fs from 'fs';
+
 function file_create(){
-  var fso = CreateObject("Scripting.FileSystemObject");
-  var a = fso.CreateTextFile("/Users/sayantandas/fun/assist/output", true);
-  a.WriteLine("test case");
-  a.Close();
+
+  var fs = require('fs');
+  fs.writeFile('/Users/sayantandas/fun/assist/output/newFile.txt', function (err){
+    if (err) throw err;
+    console.log('Saved');
+  });
 }
 
 function file_reder(){
@@ -34,3 +39,12 @@ function check(){
 function exit(){
 
 }
+
+function show(){
+  var fs = require('fs');
+  fs.openFile('/Users/sayantandas/fun/assist/output/file.txt', function (err){
+    if (err) throw err;
+    console.log('Open');
+  });
+}
+

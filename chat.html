@@ -8,12 +8,6 @@
     html {
       font-family: times-new-roman;
     }
-    body{
-      width: 50%;
-      max-width: 800px;
-      min-width: 480px;
-      margin: 0 auto;
-    }
 
     .chatReply{
       color: white;
@@ -24,19 +18,22 @@
        justify-content: center;
        align-items: center;
        height: 800px;
+       width: 800px;
        border: 3px solid red; 
      }
   </style>
   
 	<div class="center">
-      <embed type = "text/html" src = "/Users/sayantandas/fun/assist/output/generation.txt" width="1200"; height="800">
-      <label for="chatField"> chat field: </label>
-      <input type="text" id="chatField" class="chatField" style="height:20px; width:700px; font-size12pt">
-      <button> send </button> 
-    </div>
-    <!-- connect the button to js - type into the field when press the button the text item store into txt file and clear the field  -->
-  <script type='text/javascript' src='chat.js'></script>
-  </head>
 
+      <embed type = "text/html" src = "/Users/sayantandas/fun/assist/output/generation.txt" width="800"; height="800">
+      <label for="chatField"> chat field: </label>
+      <input type="text" name="cF" id="chatField" class="chatField" style="height:20px; width:700px; font-size12pt">
+     <input type="submit" value="Submit">
+     <button onClick="JavaScript:show()">ShowFile</button>
+    </div>
+
+  <script type='text/javascript/module' src='scripts/app.js'></script>
+  
+  </head>
   </body>
 </html>
