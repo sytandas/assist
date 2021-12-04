@@ -1,40 +1,43 @@
 //chat.js file connect with the chat.html and interect with the user input - and reply accordingly 
 //intially we make it simple one question to another reply format 
-//future TODO: machine learning algortihm to predict and implement reply(s)
 
-// todo:: 
-// write funtions that are doing file creation/checking 
-// write function for lexical analysis and return according to the input
-// write function for ouput showing 
-// connect to the html page and return 2 ouput intially::  hi <-> hello && how are you <-> i'm good
+//TODO: machine learning algortihm to predict and implement reply(s)
 
+import * as fs from 'fs'; // importing function for file handling - fs
 
-//file creation function and if same file available then re-create it with different file name dd-mm-yyyy (future scope - showing detatis on page)
-
-import * as fs from 'fs';
+//create file function
 
 function file_create(){
-
   var fs = require('fs');
   fs.writeFile('/Users/sayantandas/fun/assist/output/newFile.txt', function (err){
-    if (err) throw err;
+    if (err) throw ere;
     console.log('Saved');
   });
 }
 
+//read file - scope ~ lexical analysis
+
 function file_reder(){
 }
 
+//writng to the file 
+
 function file_writer(){
 }
+
+//reply function
 
 function reply(){
   
 }
 
+//lexical analysis 
+
 function check(){
 
 }
+
+//terminating funciton
 
 function exit(){
 
@@ -47,4 +50,4 @@ function show(){
     console.log('Open');
   });
 }
-
+show();
