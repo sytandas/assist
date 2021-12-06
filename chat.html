@@ -3,6 +3,7 @@
   <head>
     <body>
       <meta charset='utf-8' />
+      <!-- Redirect page after 1 second using meta for future use chat refresh -->
     <title> Assist </title>
   <style>
     html {
@@ -25,14 +26,19 @@
   </style>
   
 	<div class="center">
-      <embed type = "text/html" src = "/Users/sayantandas/fun/assist/output/generation.txt" width="800"; height="800">
-      <label for="chatField"> chat field: </label>
-      <input type="text" name="cF" id="chatField" class="chatField" style="height:20px; width:700px; font-size12pt">
+    <form action = "/chat.js">
+      <label for="assist"> Assist </label>
+      <fieldset>
+        <legend>Assist</legend>
+
+      </fieldset>
+      <output id="chatBox" name = "chatBox"> </output>
+      <textarea id="chatInput" name="chatInput" rows="2" cols="50">Start Chatting</textarea>
       <input type="submit" value="Submit">
-      <button onClick="JavaScript:show()">ShowFile</button>
+    </form>
   </div>
 
-  <script type='text/javascript/module' src='scripts/app.js'></script>
+  <script type='text/javascript/module' src='chat.js'></script>
  
   </head>
   </body>
