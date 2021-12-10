@@ -1,13 +1,13 @@
 //chat.js file connect with the chat.html and interect with the user input - and reply accordingly 
-//intially we make it simple one question to another reply format 
-
-//TODO: machine learning algortihm to predict and implement reply(s)
 
 import * as fs from 'fs'; // importing function for file handling - fs
 
-//create file function
+//create file - at the time of page load/refresh 
 
-function file_create(){
+console.log('connected');
+
+window.onload = function file_create(){
+  console.log('load');
   var fs = require('fs');
   fs.writeFile('/Users/sayantandas/fun/assist/output/newFile.txt', function (err){
     if (err) throw ere;
@@ -17,12 +17,13 @@ function file_create(){
 
 //read file - scope ~ lexical analysis
 
-function file_reder(){
+function file_read(){
 }
 
 //writng to the file 
 
-function file_writer(){
+function file_write(){
+  
 }
 
 //reply function
@@ -37,9 +38,9 @@ function check(){
 
 }
 
-//terminating funciton
+//terminating function
 
-function exit(){
+function terminate(){
 
 }
 
@@ -50,4 +51,4 @@ function show(){
     console.log('Open');
   });
 }
-show();
+
