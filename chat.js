@@ -1,15 +1,31 @@
-//chat.js file connect with the chat.html and interect with the user input - and reply accordingly 
 
+console.log('connected');
+
+document.getElementById('inputfile').addEventListener('change', function() {
+  var fr = new FileReader();
+  fr.onload=function(){
+    document.getElementById('output').textContent=fr.result;
+  }
+  fr.readAsText(this.files[0]);
+})
+
+
+
+
+
+
+
+
+/*
 import * as fs from 'fs'; // importing function for file handling - fs
 
 //create file - at the time of page load/refresh 
 
-console.log('connected');
 
 window.onload = function file_create(){
   console.log('load');
   var fs = require('fs');
-  fs.writeFile('/Users/sayantandas/fun/assist/output/newFile.txt', function (err){
+  fs.writeFile('/output/newFile.txt', function (err){
     if (err) throw ere;
     console.log('Saved');
   });
@@ -46,9 +62,10 @@ function terminate(){
 
 function show(){
   var fs = require('fs');
-  fs.openFile('/Users/sayantandas/fun/assist/output/file.txt', function (err){
+  fs.openFile('/output/file.txt', function (err){
     if (err) throw err;
     console.log('Open');
   });
 }
+*/
 
