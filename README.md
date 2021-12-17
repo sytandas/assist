@@ -10,3 +10,12 @@ future-scope:
 
 how to make it more private/anonimizing user and their request
 adding an api for people want to use 
+
+
+System-design ::
+
+
+send_message(human) -> receivied_message(ai) -> ml -> reply(human)
+sessions
+
+TCP -> websocket (WSS) - great for chat application 
