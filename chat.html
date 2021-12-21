@@ -1,45 +1,30 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html>
   <head>
-    <body>
-      <meta charset='utf-8' />
+      <meta charset='utf-8'>
       <!-- Redirect page after 1 second using meta for future use chat refresh -->
     <title> Assist </title>
+  </head>
+    <body>
   <style>
     html {
-      font-family: times-new-roman;
+      font-family: arial;
     }
-
-    .chatReply{
-      color: white;
-      padding: 4px;
-    }
-    .center {
+    .center  {
        display: flex;
        justify-content: center;
        align-items: center;
-       height: 800px;
-       width: 800px;
+       height: 600px;
+       width: 600px;
        border: 3px solid red; 
        margin: 0 auto;
      }
   </style>
-  
-	<div class="center">
-    <form action = "/chat.js">
-      <label for="assist"> Assist </label>
-      <fieldset>
-        <legend>Assist</legend>
-
-      </fieldset>
-      <output id="chatBox" name = "chatBox"> </output>
-      <textarea id="chatInput" name="chatInput" rows="2" cols="50">Start Chatting</textarea>
-      <input type="submit" value="Submit" onclick="file_write()">
-    </form>
+  <div class='center'>
+    
+    <textarea id="chatInput" name="chatInput" rows="1" cols="50">Start Chatting</textarea>
+    <button type='button'>Send</button>  
   </div>
-
-  <script type='text/javascript/module' src='/Users/sayantandas/fun/assist/chat.js'></script>
- 
-  </head>
-  </body>
+  <script type='text/javascript' src='chat.js'></script>
+    </body>
 </html>
