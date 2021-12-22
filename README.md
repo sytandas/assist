@@ -14,8 +14,8 @@ adding an api for people want to use
 
 System-design ::
 
+send-message(human) -> receivied-message(ai) -> ml -> reply(human)
 
-send_message(human) -> receivied_message(ai) -> ml -> reply(human)
-sessions
+single sessions design 
 
 TCP -> websocket (WSS) - great for chat application 
