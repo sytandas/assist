@@ -18,4 +18,6 @@ send-message(human) -> receivied-message(ai) -> ml -> reply(human)
 
 single sessions design 
 
-TCP -> websocket (WSS) - great for chat application 
+TCP -> websocket (WSS) 
+
+
