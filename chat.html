@@ -10,21 +10,11 @@
     html {
       font-family: arial;
     }
-    .center  {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 600px;
-       width: 600px;
-       border: 3px solid red; 
-       margin: 0 auto;
-     }
   </style>
-  <div class='center'>
-    
-    <textarea id="chatInput" name="chatInput" rows="1" cols="50">Start Chatting</textarea>
-    <button type='button'>Send</button>  
-  </div>
+  
+  <div id="list"><p><iframe src="output/file.txt" width=600px height=600px frameborder=0 ></iframe></p></div>
+    <textarea id='chatInput' name='chatInput' rows='1' cols='50'>Start Chatting</textarea>
+    <button onclick='saveTextContent()' type='button' value='send' id='send'>Send</button> 
   <script type='text/javascript' src='chat.js'></script>
     </body>
 </html>
