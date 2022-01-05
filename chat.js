@@ -1,4 +1,3 @@
-
 console.log('connected');
 
 // TODO - every time it's open create a file[date/time of creation] - enter i/p data to the file as "Human: ..." 
