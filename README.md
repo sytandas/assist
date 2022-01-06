@@ -7,10 +7,8 @@ TODO (these are broader/there are sub goals too):
 3. Using an efficent and simple machine learning algorithm - what can learn over time
 
 System-design ::
-
 send-message(human) -> receivied-message(ai) -> ml -> reply(human)
 
 single sessions design 
 
 TCP -> websocket (WSS) 
-
