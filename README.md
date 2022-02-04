@@ -1,4 +1,4 @@
-Java script project implementing ai chat assistant.
+Assist - Chat
 This chat room has data-base and over time it learns and become a good companion.
 
 TODO (these are broader/there are sub goals too):
