@@ -4,7 +4,7 @@ console.log('connected');
 
 setTimeout(function(){
   window.location.href = '/Users/sayantandas/fun/assist/chat.html';
-}, 5000);
+}, 50000); //TODO right not it set to 50 sec 
 
 // write into the file
 
@@ -19,5 +19,5 @@ function WriteToFile(){
 // button action to write text area document to the file 
 
 function saveTextContent(){
-
+    
 }
