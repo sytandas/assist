@@ -9,3 +9,5 @@ TODO (these are broader/there are sub goals too):
 System-design ::
 send-message(human) -> receivied-message(ai) -> ml -> reply(generated what suits better)
 
+06-03-2022
+
