@@ -19,5 +19,5 @@ function WriteToFile(){
 // button action to write text area document to the file 
 
 function saveTextContent(){
-    
+      
 }
