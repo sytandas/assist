@@ -8,4 +8,5 @@ send-message(human) -> receivied-message(ai) -> ml -> reply(generated what suits
 
 GOAL:
 
-1. Building a client and server side massegine app for understanding  messaging as well as web-app, using react for client side and server side using node, using socet.io 
+1.Building a client and server side massegine app for understanding  messaging as well as web-app, using react for client side and server side using node, using socet.io 
+
