@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = ("<your open-api api key>") # reaplce <> with your own open-ai api key
+openai.api_key = ("<your open-api api key>") # reaplce <> with your openai api key
  
 while True:
   question = input("\033[34mwhat is your question?\n\033[0m")
